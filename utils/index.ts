@@ -1,8 +1,15 @@
 import { ethers } from "hardhat";
 import { Blockchain } from "./common";
+import { Address } from "./types";
 
 const provider = ethers.provider;
 export const getBlockchainUtils = () => new Blockchain(provider);
+
+import {
+  SetFixture,
+} from "./fixtures";
+
+export const getSetFixture = (ownerAddress: Address) => new SetFixture(provider, ownerAddress);
 
 export {
   getAccounts,

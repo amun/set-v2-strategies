@@ -1,6 +1,7 @@
 export { BaseExtensionMock } from "../../typechain/BaseExtensionMock";
 export { BaseGlobalExtensionMock } from "../../typechain/BaseGlobalExtensionMock";
 export { BaseManager } from "../..//typechain/BaseManager";
+export { BaseManagerV2 } from "../../typechain/BaseManagerV2";
 export { ChainlinkAggregatorMock } from "../../typechain/ChainlinkAggregatorMock";
 export { DelegatedManager } from "../../typechain/DelegatedManager";
 export { DelegatedManagerFactory } from "../../typechain/DelegatedManagerFactory";
@@ -21,3 +22,5 @@ export { BatchTradeExtension } from "../../typechain/BatchTradeExtension";
 export { TradeAdapterMock } from "../../typechain/TradeAdapterMock";
 export { WrapExtension } from "../../typechain/WrapExtension";
 export { ClaimExtension } from "../../typechain/ClaimExtension";
+export { WETH9 } from "../../typechain/WETH9";
+export { StandardTokenMock } from "../../typechain/StandardTokenMock";

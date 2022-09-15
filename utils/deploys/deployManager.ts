@@ -7,6 +7,7 @@ import {
 
 import { BaseManager__factory } from "../../typechain/factories/BaseManager__factory";
 import { DelegatedManager__factory } from "../../typechain/factories/DelegatedManager__factory";
+import { BaseManagerV2__factory } from "../../typechain/factories/BaseManagerV2__factory";
 
 export default class DeployToken {
   private _deployerSigner: Signer;
@@ -44,6 +45,18 @@ export default class DeployToken {
       operators,
       allowedAssets,
       useAssetAllowlist
+    );
+  }
+
+  public async deployBaseManagerV2(
+    set: Address,
+    operator: Address,
+    methodologist: Address
+  ): Promise<BaseManagerV2> {
+    return await new BaseManagerV2__factory(this._deployerSigner).deploy(
+      set,
+      operator,
+      methodologist
     );
   }
 
