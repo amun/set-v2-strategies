@@ -2,6 +2,7 @@ import { Signer } from "ethers";
 import { Address } from "../types";
 import {
   BaseManager,
+  BaseManagerV2,
   DelegatedManager
 } from "../contracts/index";
 
